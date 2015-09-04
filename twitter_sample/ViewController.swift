@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             }
             
             // アカウント情報の取得に成功
-            let accounts = self.accountStore.accountsWithAccountType(accountType) as! [ACAccount]
+            self.accounts = self.accountStore.accountsWithAccountType(accountType) as! [ACAccount]
             self.showAndSelectTwitterAccountWithSelectionSheets()
         }
     }
